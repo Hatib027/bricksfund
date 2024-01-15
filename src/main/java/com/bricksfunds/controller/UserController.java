@@ -68,7 +68,7 @@ public class UserController {
 	@PostMapping("/addUser")
 	public User createUser(@RequestBody User user,HttpServletRequest httpServletRequest) throws Exception {
 		
-		
+		System.out.println(user);
 		user.setPassword(passwordEncoder.encode(user.getPassword()));
 		Set<UserRole> roles = new HashSet<>();
 		Role role = new Role();
@@ -80,15 +80,15 @@ public class UserController {
 		userRole.setRole(role);
 		HttpSession httpSession = httpServletRequest.getSession(true);
 		roles.add(userRole);
-		
+		System.out.println("Role Added");
 		User userRefer = userService.findByYourReferCode(user.getReferralcode());
-		
+		System.out.println(userRefer);
 		if(userRefer == null) {
 			throw new Exception("Refer Code Wrong");
 		}
 		
 		List<User> mailcheck =userService.getUserByMail(user.getEmail());
-		
+		System.out.println("mail Check" + mailcheck);
 		User users = new User();
 		if(!mailcheck.isEmpty())
 		{
@@ -97,7 +97,7 @@ public class UserController {
 		
 		
 		User userMain =userService.getUser(user.getUsername());
-		
+		System.out.println("Near User main"+userMain);
 		
 		
 		if(userMain != null && userMain.getEnable() == true) {
