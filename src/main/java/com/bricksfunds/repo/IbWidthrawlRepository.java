@@ -16,7 +16,7 @@ public interface IbWidthrawlRepository extends JpaRepository<InternetBankingWith
     public List<?> getAllIbWidthrawlRequests();
 
 
-    List<InternetBankingWithdrawl> findByUserName(String username);
+    List<InternetBankingWithdrawl> findByUserNameOrderByIdDesc(String username);
     
     @Query
     public List<InternetBankingWithdrawl> findByStatusOrderByIdDesc(int i);
