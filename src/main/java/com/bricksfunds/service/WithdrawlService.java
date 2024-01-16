@@ -61,11 +61,11 @@ public class WithdrawlService {
 	    }
 	    
 	    public List<UPIWithdrawl> findByUsernameUpi(String username){
-	    	return this.upiWidthrawlRepository.findByUserName(username);
+	    	return this.upiWidthrawlRepository.findByUserNameOrderByIdDesc(username);
 	    }
 	    
 	    public List<InternetBankingWithdrawl> findByUsernameIb(String username){
-	    	return this.ibWidthrawlRepository.findByUserName(username);
+	    	return this.ibWidthrawlRepository.findByUserNameOrderByIdDesc(username);
 	    }
 
 	    
