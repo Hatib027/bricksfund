@@ -266,7 +266,7 @@ public class UserController {
 		
 		
 		
-		String s ="http://localhost:4200/change-password/"+token;
+		String s ="https://bricksfunds.web.app/change-password/"+token;
 		String message = "" + "<div style='border:1px solid #e2e2e2;padding:20px;'>" + "<h2>" + "Welcome To Bricks-Funds "  + "</h2>"+
 		"<br>"+"<a style='cursor:pointer;' href= "+s+">"+
 		"<button style='background-color:#03A9F4;width:150px;height:50px;border-radius:25px;justify-content:center;margin:auto;color:white;border:1px solid white;'>"
