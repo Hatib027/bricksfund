@@ -286,7 +286,7 @@ public class UserController {
 		
 		
 		String s ="https://bricksfunds.web.app/change-password/"+token;
-tring message ="<div style=\"display: flex;\">\r\n" + 
+String message ="<div style=\"display: flex;\">\r\n" + 
 		"        <div>\r\n" + 
 		"\r\n" + 
 		"            <img src=\"https://lh7-us.googleusercontent.com/RVuG0V7wech5l9XMvCwTQNvSzNq8RKBFJRiG2ChOXwVtdlItOWJ0z1IYObaS9Z_PMC0eoqe0ibty-fKFGfWCvpK1lYCBO6efsIZ27rGnANzIT7Xy7ciLzYnhhdjaleuhDudzXNiu3DTbhOAiJGTP080\"\r\n" + 
