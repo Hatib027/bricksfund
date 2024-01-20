@@ -117,10 +117,14 @@ public class UserController {
 			}
 			Integer otp = Integer.parseInt(new String(jtp));
 			httpSession.setAttribute("otp", otp);
+
+
+
+
 			String message = "  <div style=\"display: flex;\">\r\n" + 
 					"        <div>\r\n" + 
 					"\r\n" + 
-					"            <img src=\"https://main-groupdocs-viewer-app.s3.us-west-2.amazonaws.com/Output/730f5e4a-1267-42af-9727-dd0b678b9f4b/page_1.png?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4XIV7DNDJXINLYUA/20240118/us-west-2/s3/aws4_request&X-Amz-Date=20240118T060807Z&X-Amz-SignedHeaders=host&X-Amz-Signature=40a06de95a0938216d0d1e952bd3f6378d590c1692d74f1f10eee89062708ac2\"\r\n" + 
+					"            <img src=\"https://lh7-us.googleusercontent.com/RVuG0V7wech5l9XMvCwTQNvSzNq8RKBFJRiG2ChOXwVtdlItOWJ0z1IYObaS9Z_PMC0eoqe0ibty-fKFGfWCvpK1lYCBO6efsIZ27rGnANzIT7Xy7ciLzYnhhdjaleuhDudzXNiu3DTbhOAiJGTP080\"\r\n" + 
 					"                style=\"height:100px;  width:100px;margin-top:0px;\" />\r\n" + 
 					"        </div>\r\n" + 
 					"\r\n" + 
@@ -140,6 +144,7 @@ public class UserController {
 					"    <img src=\"https://lh7-us.googleusercontent.com/iT4ss7mxbXJsmwsBZfC7uwpMb2dxVcZvl1tdU-hw6Y3PH8turukVvg33zcBOX927UuSl5mEAZa0zmedBKVZymkaEqUt3N-dFmMcf64UnPHXuWupLks8tiieYuR0Rr7awDoVITC15UvEjbfuBlMcfmF0\"\r\n" + 
 					"        alt=\"\" height=\"80px\" width=\"800px\">";
 
+			
 			DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
 			
 			
