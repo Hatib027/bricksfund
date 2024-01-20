@@ -21,7 +21,7 @@ public interface UserRepository extends JpaRepository<User,Long>{
 	
 	public List<User> findByReferralcodeAndEnable(String yourRefferCode,boolean enable);
 	
-	
+	public User findByEmailAndEnable(String username,boolean enable);
 	
 	public User findByUsernameIgnoreCase(String username);
 }
