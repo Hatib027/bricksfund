@@ -256,9 +256,7 @@ public class UserController {
 		}
 		List<User> user = this.userService.getUserByMail(email);
 		
-		if(user.isEmpty()) {
-			throw new Exception();
-		}
+		
 		
 	
 	
