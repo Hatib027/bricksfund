@@ -117,8 +117,28 @@ public class UserController {
 			}
 			Integer otp = Integer.parseInt(new String(jtp));
 			httpSession.setAttribute("otp", otp);
-			String message = "" + "<div style='border:1px solid #e2e2e2;padding:20px;'>" + "<h1>" + "OTP is : " + "<b>"
-					+ otp + "</b>" + "</h1>" + "</div>";
+			String message = "  <div style=\"display: flex;\">\r\n" + 
+					"        <div>\r\n" + 
+					"\r\n" + 
+					"            <img src=\"https://main-groupdocs-viewer-app.s3.us-west-2.amazonaws.com/Output/730f5e4a-1267-42af-9727-dd0b678b9f4b/page_1.png?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4XIV7DNDJXINLYUA/20240118/us-west-2/s3/aws4_request&X-Amz-Date=20240118T060807Z&X-Amz-SignedHeaders=host&X-Amz-Signature=40a06de95a0938216d0d1e952bd3f6378d590c1692d74f1f10eee89062708ac2\"\r\n" + 
+					"                style=\"height:100px;  width:100px;margin-top:0px;\" />\r\n" + 
+					"        </div>\r\n" + 
+					"\r\n" + 
+					"        <div style=\"height:100px; border-left:8px solid rgb(114,152,183); margin-left:20px;\">\r\n" + 
+					"        </div>\r\n" + 
+					"\r\n" + 
+					"        <div style=\"color: rgb(114,152,183);font-weight: bolder; margin-left:20px; font-size: 30px; margin-top: 18px;\">\r\n" + 
+					"            BRICKS FUNDS\r\n" + 
+					"        </div>\r\n" + 
+					"    </div>\r\n" + 
+					"\r\n" + 
+					"    <h3 style=\"color: rgb(114,152,183); margin-bottom: 05px;\">Dear Client,</h3>\r\n" + 
+					"    <h3 style=\"color: rgb(114,152,183); margin-top: 0px;\">Hello There,</h3>\r\n" + 
+					"    <h3 style=\"color: rgb(114,152,183); margin-top: 9px;\">Invest With Bricks Funds and reap higher returns - Your\r\n" + 
+					"        registration is ready and awaits your step into financial growth !</h3>\r\n" + 
+					"    <h3 style=\"color: rgb(114,152,183); margin-top: 9px; font-weight: bolder; font-size: larger;\">Your OTP is :"+otp+"</h3>\r\n" + 
+					"    <img src=\"https://lh7-us.googleusercontent.com/iT4ss7mxbXJsmwsBZfC7uwpMb2dxVcZvl1tdU-hw6Y3PH8turukVvg33zcBOX927UuSl5mEAZa0zmedBKVZymkaEqUt3N-dFmMcf64UnPHXuWupLks8tiieYuR0Rr7awDoVITC15UvEjbfuBlMcfmF0\"\r\n" + 
+					"        alt=\"\" height=\"80px\" width=\"800px\">";
 
 			DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
 			
@@ -267,10 +287,33 @@ public class UserController {
 		
 		
 		String s ="https://bricksfunds.web.app/change-password/"+token;
-		String message = "" + "<div style='border:1px solid #e2e2e2;padding:20px;'>" + "<h2>" + "Welcome To Bricks-Funds "  + "</h2>"+
-		"<br>"+"<a style='cursor:pointer;' href= "+s+">"+
-		"<button style='background-color:#03A9F4;width:150px;height:50px;border-radius:25px;justify-content:center;margin:auto;color:white;border:1px solid white;'>"
-				+"Verify-Email"  + "</button>" +"</a>" +"</div>";
+		String message ="<div style=\"display: flex;\">\r\n" + 
+		"        <div>\r\n" + 
+		"\r\n" + 
+		"            <img src=\"https://main-groupdocs-viewer-app.s3.us-west-2.amazonaws.com/Output/730f5e4a-1267-42af-9727-dd0b678b9f4b/page_1.png?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4XIV7DNDJXINLYUA/20240118/us-west-2/s3/aws4_request&X-Amz-Date=20240118T060807Z&X-Amz-SignedHeaders=host&X-Amz-Signature=40a06de95a0938216d0d1e952bd3f6378d590c1692d74f1f10eee89062708ac2\"\r\n" + 
+		"                style=\"height:100px; width:100px;margin-top:0px;\" />\r\n" + 
+		"        </div>\r\n" + 
+		"\r\n" + 
+		"        <div style=\"height:100px; border-left:8px solid rgb(114,152,183); margin-left:20px;\">\r\n" + 
+		"        </div>\r\n" + 
+		"\r\n" + 
+		"        <div style=\"color: rgb(114,152,183);font-weight:bolder; margin-left:20px; font-size: 30px; font-weight: bolder; margin-top: 18px;\">\r\n" + 
+		"            BRICKS FUNDS\r\n" + 
+		"        </div>\r\n" + 
+		"    </div>\r\n" + 
+		"\r\n" + 
+		"    <h3 style=\"color: rgb(114,152,183); margin-bottom: 05px;\">Dear Client,</h3>\r\n" + 
+		"    <h3 style=\"color: rgb(114,152,183); margin-top: 0px;\">Hello There,</h3>\r\n" + 
+		"    <h3 style=\"color: rgb(114,152,183); margin-top: 9px;\">Invest With Bricks Funds and reap higher returns - Your\r\n" + 
+		"        registration is ready and awaits your step into financial growth !</h3>\r\n" + 
+		"    <a style=\"cursor:pointer; margin-top: 0px; text-decoration:none;\" href='"+s+"'>"+"<button\r\n" + 
+		"            style=\"background-color:#03A9F4;width:150px;height:50px;border-radius:25px;display:block;color:white;border:1px solid white;margin-top: 0px;\">\r\n" + 
+		"            Verify-Email</button></a>\r\n" + 
+		"    <!-- <h3 style=\" color: rgb(114,152,183); margin-top: 9px; font-weight: bolder; font-size: larger;\">Your OTP is :\r\n" + 
+		"            </h3> -->\r\n" + 
+		"\r\n" + 
+		"    <img src=\"https://lh7-us.googleusercontent.com/iT4ss7mxbXJsmwsBZfC7uwpMb2dxVcZvl1tdU-hw6Y3PH8turukVvg33zcBOX927UuSl5mEAZa0zmedBKVZymkaEqUt3N-dFmMcf64UnPHXuWupLks8tiieYuR0Rr7awDoVITC15UvEjbfuBlMcfmF0\"\r\n" + 
+		"        alt=\"\" height=\"80px\" width=\"800px\">";
 		
 	//	String message = "" + "<div style='border:1px solid #e2e2e2;padding:20px;'>" + "<h1>" + "OTP is :" + "<b>"
 	//			+ "<a href='google.com'>Hatib</a>" + "</b>" + "</h1>" + "</div>";
