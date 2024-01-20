@@ -254,13 +254,7 @@ public class UserController {
 		if(user == null) {
 			throw new Exception();
 		}
-		List<User> user = this.userService.getUserByMail(email);
-		
-		
-		
-	
-	
-		 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
 		ForgotPassword p = this.userServiceImpl.findByEmailForgot(email);
 		
 		SimpleDateFormat d = new SimpleDateFormat("dd-MM-yyyy");
