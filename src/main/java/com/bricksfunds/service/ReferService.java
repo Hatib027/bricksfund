@@ -22,7 +22,7 @@ public class ReferService {
 	
 	public List<ReferMaster> getYourAmount(User user){
 		
-		return  this.referReposiotry.findByUserRefer(user);
+		return  this.referReposiotry.findByUserReferOrderByIdDesc(user);
 	}
 	
 	public RefPercentage getReferPercentageById(int id) {
