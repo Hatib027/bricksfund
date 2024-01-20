@@ -35,20 +35,7 @@ public class UserServiceImpl  implements UserService{
 		
 		User local = this.userRepository.findByUsername(user.getUsername());
 		
-//		if(local != null) {
-//			System.out.println("User is Already There !!");
-//			throw new Exception("User Already Present !!");
-//		}else {
-//			
-////			for(UserRole ur:userRoles) {
-////				roleRepository.save(ur.getRole());
-////			}
-//			
-//			user.getUserRoles().addAll(userRoles);
-//			
-//			local = this.userRepository.save(user);
-//			
-//		}
+
 		
 		if(local == null) {
 			for(UserRole ur:userRoles) {
@@ -143,6 +130,10 @@ public class UserServiceImpl  implements UserService{
 	
 	public ForgotPassword findByTokenForgot(String token) {
 		return this.forgotPasswordRepository.findByToken(token);
+	}
+	public User findByEmailAndEnable(String email) {
+		// TODO Auto-generated method stub
+		return this.userRepository.findByEmailAndEnable(email,true);
 	}
 
 }
