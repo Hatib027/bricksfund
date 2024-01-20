@@ -250,7 +250,7 @@ public class UserController {
 	
 	@PostMapping("/email-verify")
 	public String mailVerify(@RequestBody String email) throws Exception  {
-		
+		User user = this.userServiceImpl.findByEmailAndEnable(email);
 		
 		List<User> user = this.userService.getUserByMail(email);
 		
