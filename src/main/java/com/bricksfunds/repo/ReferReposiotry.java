@@ -11,7 +11,7 @@ import com.bricksfunds.entity.User;
 public interface ReferReposiotry extends JpaRepository<ReferMaster, Integer>{
 
 	
-	public List<ReferMaster> findByUserRefer(User userId);
+	public List<ReferMaster> findByUserReferOrderByIdDesc(User userId);
 	
 	@Query("select sum(r.amount) from ReferMaster r where r.userRefer=:refer")
 	public String findByReferTotal(User refer);
