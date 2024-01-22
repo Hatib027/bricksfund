@@ -10,6 +10,7 @@ import com.bricksfunds.entity.User;
 
 
 public interface UserRepository extends JpaRepository<User,Long>{
+	public List<User> findByEnable(boolean enable);
  
 	public User findByUsernameAndEnable(String username,boolean enable);
 	
