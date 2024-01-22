@@ -85,6 +85,8 @@ public class UserController {
 		System.out.println(userRefer);
 		if(userRefer == null) {
 			throw new Exception("Refer Code Wrong");
+		}else if(userRefer.getEnable() == false) {
+			throw new Exception("Refer Code Wrong");
 		}
 		
 		List<User> mailcheck =userService.getUserByMail(user.getEmail());
