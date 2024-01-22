@@ -52,7 +52,7 @@ import com.bricksfunds.service.ReferService;
 import com.bricksfunds.service.UserService;
 import com.bricksfunds.service.WithdrawlService;
 import com.google.gson.Gson;
-
+import com.bricksfunds.service.UserServiceImpl;
 @RestController
 @RequestMapping("/admin")
 public class AdminController {
@@ -79,6 +79,9 @@ public class AdminController {
 	private EventService eventService;
 
 	@Autowired
+	UserServiceImpl userServiceImpl;
+	
+	@Autowired
 	private OfferService offerService;
 	
 	private static final DecimalFormat dfs = new DecimalFormat("0.000");
@@ -88,7 +91,7 @@ public class AdminController {
 	@GetMapping("/fetchAllUser")
 	public List<User> getAllUser(){
 		
-		List<User> allUser = this.userService.findAllUser();
+		List<User> allUser = this.userServiceImpl.findByEnable();
 		
 		return allUser;
 	}
@@ -1201,7 +1204,7 @@ public class AdminController {
 				rowhead.createCell(4).setCellValue("Email");
 				rowhead.createCell(5).setCellValue("Phone");
 			
-				List<User> users= this.userService.findAllUser();
+				List<User> users= this.userServiceImpl.findByEnable();
 				
 				for(int j = 0; j<=5; j++) {
 					rowhead.getCell(j).setCellStyle(style);
