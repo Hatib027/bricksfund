@@ -135,5 +135,8 @@ public class UserServiceImpl  implements UserService{
 		// TODO Auto-generated method stub
 		return this.userRepository.findByEmailAndEnable(email,true);
 	}
-
+public List<User> findByEnable() {
+		// TODO Auto-generated method stub
+		return this.userRepository.findByEnable(true);
+	}
 }
