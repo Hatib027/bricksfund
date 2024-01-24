@@ -287,7 +287,7 @@ public class UserController {
 		
 		
 		
-		String s ="https://bricksfunds.web.app/change-password/"+token;
+		String s ="https://bricksfunds.in/change-password/"+token;
 String message ="<div style=\"display: flex;\">\r\n" + 
 		"        <div>\r\n" + 
 		"\r\n" + 
