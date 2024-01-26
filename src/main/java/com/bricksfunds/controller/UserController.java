@@ -306,7 +306,7 @@ String message ="<div style=\"display: flex;\">\r\n" +
 		"    <h3 style=\"color: rgb(114,152,183); margin-bottom: 05px;\">Dear Client,</h3>\r\n" + 
 		"    <h3 style=\"color: rgb(114,152,183); margin-top: 0px;\">Hello There,</h3>\r\n" + 
 		"    <h3 style=\"color: rgb(114,152,183); margin-top: 9px;\">Invest With Bricks Funds and reap higher returns - Your\r\n" + 
-		"        registration is ready and awaits your step into financial growth !</h3>\r\n" + 
+		"      The Forgot Password Link Is Below !</h3>\r\n" + 
 		"    <a style=\"cursor:pointer; margin-top: 0px; text-decoration:none;\" href='"+s+"'>"+"<button\r\n" + 
 		"            style=\"background-color:#03A9F4;width:150px;height:50px;border-radius:25px;display:block;color:white;border:1px solid white;margin-top: 0px;\">\r\n" + 
 		"            Verify-Email</button></a>\r\n" + 
