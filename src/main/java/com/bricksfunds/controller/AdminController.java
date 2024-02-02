@@ -189,9 +189,9 @@ public class AdminController {
 				mlm.setUser(user);
 				
 				int level=0;
-				if(payment.getAmount()>24 && payment.getAmount()<1001) {
+				if(payment.getAmount()>24 && payment.getAmount()<501) {
 					level =1;
-				}else if(payment.getAmount()>1000 && payment.getAmount()<5001) {
+				}else if(payment.getAmount()>500 && payment.getAmount()<5001) {
 					level=2;
 				}else if(payment.getAmount()>5000){
 					level = 3;
@@ -417,9 +417,9 @@ public class AdminController {
 					mlm.setUser(user);
 					
 					int level=0;
-					if(payment.getAmount()>24 && payment.getAmount()<1001) {
+					if(payment.getAmount()>24 && payment.getAmount()<501) {
 						level =1;
-					}else if(payment.getAmount()>1000 && payment.getAmount()<5001) {
+					}else if(payment.getAmount()>500 && payment.getAmount()<5001) {
 						level=2;
 					}else if(payment.getAmount()>5000){
 						level = 3;
