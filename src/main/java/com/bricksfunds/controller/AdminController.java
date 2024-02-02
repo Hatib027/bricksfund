@@ -191,9 +191,9 @@ public class AdminController {
 				int level=0;
 				if(payment.getAmount()>24 && payment.getAmount()<501) {
 					level =1;
-				}else if(payment.getAmount()>500 && payment.getAmount()<5001) {
+				}else if(payment.getAmount()>500 && payment.getAmount()<5000) {
 					level=2;
-				}else if(payment.getAmount()>5000){
+				}else if(payment.getAmount()>4999){
 					level = 3;
 				}else {
 					level = 0;
@@ -419,9 +419,9 @@ public class AdminController {
 					int level=0;
 					if(payment.getAmount()>24 && payment.getAmount()<501) {
 						level =1;
-					}else if(payment.getAmount()>500 && payment.getAmount()<5001) {
+					}else if(payment.getAmount()>500 && payment.getAmount()<5000) {
 						level=2;
-					}else if(payment.getAmount()>5000){
+					}else if(payment.getAmount()>4999){
 						level = 3;
 					}else {
 						level = 0;
