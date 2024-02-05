@@ -339,17 +339,34 @@ public class AdminController {
 					mk.setDateOfInvestment(ipk.getDateOfInvestment());
 					mk.setDateOfExpireInvestment(ipk.getDateOfExpireInvestment());
 					
-					Double intrest = ipk.getTotalIntrest();
-					if(i.getTotalIntrest() == null) {
+					// Double intrest = ipk.getTotalIntrest();
+					// if(i.getTotalIntrest() == null) {
+					// 	intrest = 0.0;
+					// }
+					// mk.setTotalIntrest(intrest);
+					
+					// Double totalProfit = ipk.getTotalProfit();
+					// if(i.getTotalProfit() == null) {
+					// 	totalProfit =0.0;
+					// }
+					// mk.setTotalProfit(totalProfit);
+
+
+						Double intrest = ipk.getTotalIntrest();
+					
+					String checkDouble = intrest.toString();
+					if(checkDouble.equals("")) {
 						intrest = 0.0;
 					}
 					mk.setTotalIntrest(intrest);
 					
 					Double totalProfit = ipk.getTotalProfit();
-					if(i.getTotalProfit() == null) {
+					String checkDouble1 = totalProfit.toString();
+					if(checkDouble1.equals("")) {
 						totalProfit =0.0;
 					}
 					mk.setTotalProfit(totalProfit);
+					
 					if(ipk.getReferralAmount() == null) {
 					
 						Double refAmount = mainAmount;
@@ -567,17 +584,32 @@ public class AdminController {
 						mk.setDateOfInvestment(ipk.getDateOfInvestment());
 						mk.setDateOfExpireInvestment(ipk.getDateOfExpireInvestment());
 						
-						Double intrest = ipk.getTotalIntrest();
-						if(i.getTotalIntrest() == null) {
-							intrest = 0.0;
-						}
-						mk.setTotalIntrest(intrest);
+						// Double intrest = ipk.getTotalIntrest();
+						// if(i.getTotalIntrest() == null) {
+						// 	intrest = 0.0;
+						// }
+						// mk.setTotalIntrest(intrest);
 						
-						Double totalProfit = ipk.getTotalProfit();
-						if(i.getTotalProfit() == null) {
-							totalProfit =0.0;
-						}
-						mk.setTotalProfit(totalProfit);
+						// Double totalProfit = ipk.getTotalProfit();
+						// if(i.getTotalProfit() == null) {
+						// 	totalProfit =0.0;
+						// }
+						// mk.setTotalProfit(totalProfit);
+
+							Double intrest = ipk.getTotalIntrest();
+					
+					String checkDouble = intrest.toString();
+					if(checkDouble.equals("")) {
+						intrest = 0.0;
+					}
+					mk.setTotalIntrest(intrest);
+					
+					Double totalProfit = ipk.getTotalProfit();
+					String checkDouble1 = totalProfit.toString();
+					if(checkDouble1.equals("")) {
+						totalProfit =0.0;
+					}
+					mk.setTotalProfit(totalProfit);
 						if(ipk.getReferralAmount() == null) {
 							
 							Double refAmount = mainAmount;
