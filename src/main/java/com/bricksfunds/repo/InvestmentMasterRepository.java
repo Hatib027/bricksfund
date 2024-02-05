@@ -14,13 +14,13 @@ public interface InvestmentMasterRepository extends JpaRepository<InvestmentMast
 	public InvestmentMaster findByUser(User userId);
 	
 
-	@Query("select i from InvestmentMaster i where i.level=1 and i.dateOfExpireInvestment != '' and str_to_date(dateOfExpireInvestment, '%d-%m-%Y') >= str_to_date(:date, '%d-%m-%Y')")
+	@Query("select i from InvestmentMaster i where i.level=1 and i.dateOfExpireInvestment != '' and str_to_date(dateOfExpireInvestment, '%d-%m-%Y') >= str_to_date(:date, '%d-%m-%Y') and i.currentInvestment > 24")
 	public List<?> findbySchedulingLevel1(String date);
 	
-	@Query("select i from InvestmentMaster i where i.level=2 and i.dateOfExpireInvestment != '' and str_to_date(dateOfExpireInvestment, '%d-%m-%Y') >= str_to_date(:date, '%d-%m-%Y')")
+	@Query("select i from InvestmentMaster i where i.level=2 and i.dateOfExpireInvestment != '' and str_to_date(dateOfExpireInvestment, '%d-%m-%Y') >= str_to_date(:date, '%d-%m-%Y') and i.currentInvestment > 24 ")
 	public List<?> findbySchedulingLevel2(String date);
 	
-	@Query("select i from InvestmentMaster i where i.level=3 and i.dateOfExpireInvestment != '' and str_to_date(dateOfExpireInvestment, '%d-%m-%Y') >= str_to_date(:date, '%d-%m-%Y')")
+	@Query("select i from InvestmentMaster i where i.level=3 and i.dateOfExpireInvestment != '' and str_to_date(dateOfExpireInvestment, '%d-%m-%Y') >= str_to_date(:date, '%d-%m-%Y') and i.currentInvestment > 24")
 	public List<?> findbySchedulingLevel3(String date);
 	
 	
