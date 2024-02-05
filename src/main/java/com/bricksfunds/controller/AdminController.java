@@ -353,19 +353,28 @@ public class AdminController {
 
 
 						Double intrest = ipk.getTotalIntrest();
-					
-					String checkDouble = intrest.toString();
-					if(checkDouble.equals("")) {
-						intrest = 0.0;
-					}
-					mk.setTotalIntrest(intrest);
-					
-					Double totalProfit = ipk.getTotalProfit();
-					String checkDouble1 = totalProfit.toString();
-					if(checkDouble1.equals("")) {
-						totalProfit =0.0;
-					}
-					mk.setTotalProfit(totalProfit);
+						
+						
+						String checkDouble="";
+						if(intrest != null) {
+							checkDouble = intrest.toString();
+						}
+						
+						if(checkDouble.equals("")) {
+							intrest = 0.0;
+						}
+						mk.setTotalIntrest(intrest);
+						
+						Double totalProfit = ipk.getTotalProfit();
+						String checkDouble1 ="";
+						if(totalProfit != null) {
+							checkDouble1= totalProfit.toString();
+						}
+						
+						if(checkDouble1.equals("")) {
+							totalProfit =0.0;
+						}
+						mk.setTotalProfit(totalProfit);
 					
 					if(ipk.getReferralAmount() == null) {
 					
@@ -596,20 +605,29 @@ public class AdminController {
 						// }
 						// mk.setTotalProfit(totalProfit);
 
-							Double intrest = ipk.getTotalIntrest();
-					
-					String checkDouble = intrest.toString();
-					if(checkDouble.equals("")) {
-						intrest = 0.0;
-					}
-					mk.setTotalIntrest(intrest);
-					
-					Double totalProfit = ipk.getTotalProfit();
-					String checkDouble1 = totalProfit.toString();
-					if(checkDouble1.equals("")) {
-						totalProfit =0.0;
-					}
-					mk.setTotalProfit(totalProfit);
+						Double intrest = ipk.getTotalIntrest();
+						
+						
+						String checkDouble="";
+						if(intrest != null) {
+							checkDouble = intrest.toString();
+						}
+						
+						if(checkDouble.equals("")) {
+							intrest = 0.0;
+						}
+						mk.setTotalIntrest(intrest);
+						
+						Double totalProfit = ipk.getTotalProfit();
+						String checkDouble1 ="";
+						if(totalProfit != null) {
+							checkDouble1= totalProfit.toString();
+						}
+						
+						if(checkDouble1.equals("")) {
+							totalProfit =0.0;
+						}
+						mk.setTotalProfit(totalProfit);
 						if(ipk.getReferralAmount() == null) {
 							
 							Double refAmount = mainAmount;
