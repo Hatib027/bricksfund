@@ -263,15 +263,16 @@ public class AdminController {
 				im.setTotalInvestment(totalInvestment);
 				int level = 0;
 				
-				if(totalInvestment>24 && totalInvestment<1001) {
-					level =1;
-				}else if(totalInvestment>1000 && totalInvestment<5001) {
-					level=2;
-				}else if(totalInvestment>5000){
-					level = 3;
-				}else {
-					level = 0;
-				}
+			
+				if(totalInvestment>24 && totalInvestment<501) {
+						level =1;
+					}else if(totalInvestment>500 && totalInvestment<5000) {
+						level=2;
+					}else if(totalInvestment>4999){
+						level = 3;
+					}else {
+						level = 0;
+					}
 				im.setLevel(level);
 				im.setReferralAmount(i.getReferralAmount());
 				SimpleDateFormat ds =new SimpleDateFormat("dd-MM-yyyy");
@@ -517,11 +518,11 @@ public class AdminController {
 					im.setTotalInvestment(totalInvestment);
 					int level = 0;
 					
-					if(totalInvestment>24 && totalInvestment<1001) {
+				if(totalInvestment>24 && totalInvestment<501) {
 						level =1;
-					}else if(totalInvestment>1000 && totalInvestment<5001) {
+					}else if(totalInvestment>500 && totalInvestment<5000) {
 						level=2;
-					}else if(totalInvestment>5000){
+					}else if(totalInvestment>4999){
 						level = 3;
 					}else {
 						level = 0;
